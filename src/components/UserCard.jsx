@@ -12,7 +12,7 @@ import {
 
 const Image = styled.img`
     border-radius: 50px;
-    max-width: 50px;
+    max-width: 70px;
 `
 
 const UserCard = ({ user, onDelete, onSaveEdit }) => {

@@ -6,6 +6,7 @@ import Button from '@mui/material/Button'
 import UserCard from './components/UserCard'
 import SearchFilter from './components/SearchFilter'
 import AddUserForm from './components/AddUserForm'
+import PropTypes from 'prop-types';
 
 const App = () => {
   const [users, setUsers] = useState([])
@@ -94,5 +95,16 @@ const App = () => {
     </Container>
   )
 }
+
+App.propTypes = {
+  users: PropTypes.array.isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  openAddUserForm: PropTypes.bool.isRequired,
+  handleAddUser: PropTypes.func.isRequired,
+  handleSaveEditUser: PropTypes.func.isRequired,
+  handleDeleteUser: PropTypes.func.isRequired,
+  handleSearchUsers: PropTypes.func.isRequired,
+  filteredUsers: PropTypes.array.isRequired,
+};
 
 export default App;
