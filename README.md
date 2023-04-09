@@ -1,1 +1,3 @@
 # AppForce
+
+check git
